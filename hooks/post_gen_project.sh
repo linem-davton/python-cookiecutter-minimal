@@ -12,7 +12,9 @@ pre-commit install
 
 # Initialize git repository if not already initialized
 if [ ! -d .git ]; then
-  git init
+  git init -b main
+  git add -A
+  git commit -m "Initial commit"
   echo "Initialized a new git repository."
 else
   echo "Git repository already exists."
