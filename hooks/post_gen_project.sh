@@ -1,5 +1,4 @@
 #!/bin/bash 
-set -euo pipefail
 
 # move to generated root (cookiecutter already cd’s here, but be explicit)
 cd "{{ cookiecutter.project_slug }}"
