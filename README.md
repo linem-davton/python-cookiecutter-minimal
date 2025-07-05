@@ -8,7 +8,7 @@
 
 ## Why use this template?
 
-- **Minimal** – sets up just the essentials: packaging, tests, linting, Githun CI/CD, and docs. No framework lock‑in.
+- **Minimal** – sets up just the essentials: packaging, tests, linting, Github CI/CD, and docs. No framework lock‑in.
 - **Single command setup** – `cookiecutter gh:linem-davton/python-cookiecutter-minimal` yields a ready‑to‑run project in seconds.
 - **Automatic bootstrap** – post‑generation script creates a `venv`, installs requirements, initialises **git** on a `main` branch, installs _pre‑commit_ hooks and (optionally) pushes to GitHub.
 - **Flexible licensing & tooling** – pick MIT, BSD‑3‑Clause, Apache‑2.0, GPL‑3.0 or none; enable/disable GitHub Actions CI, PyPI/TestPyPI release workflows, and Read the Docs.
@@ -74,7 +74,3 @@ _See `cookiecutter.json` for defaults and full list._ ([raw.githubusercontent.co
 ## License
 
 This template itself is distributed under the MIT License. Generated projects will use whichever license you select at creation time.
-
-```
-
-```
