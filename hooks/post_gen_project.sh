@@ -17,11 +17,10 @@ if [ ! -d .git ]; then
 else
   echo "Git repository already exists."
 fi
-# Add GitHub remote if the URL is provided
-if [[ -z "{{ cookiecutter.github_url }}" ]]; then
-  echo "No GitHub URL provided, skipping remote addition."
-  exit 0
-else
-  git remote add github {{ cookiecutter.github_url }}
-  git push --set-upstream github main
-fi
+
+{% if cookiecutter.github_url != "None" and cookiecutter.github_url %}
+git remote add origin {{ cookiecutter.github_url }}
+git push --set-upstream origin main
+{% else %}
+echo "No GitHub URL provided, skipping remote addition."
+{% endif %}
