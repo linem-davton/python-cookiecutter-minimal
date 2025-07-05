@@ -23,6 +23,10 @@ pip install -U cookiecutter
 # 2 · generate a project
 cookiecutter gh:linem-davton/python-cookiecutter-minimal
 
+# 3. Setup venv and install requirements
+cd <project_slug>
+./setup.sh
+
 # 3 · run the tests (pytest)
 cd <project_slug>
 pytest -q
