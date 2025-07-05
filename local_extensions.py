@@ -7,7 +7,7 @@ from jinja2.ext import Extension
 #
 
 
-class CurrentDateExtension(Extension):
+class YearExtension(Extension):
     def __init__(self, environment):
         super().__init__(environment)
 
