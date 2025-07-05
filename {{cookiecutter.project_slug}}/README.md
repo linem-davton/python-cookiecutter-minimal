@@ -16,5 +16,5 @@
 [![PyPI Release](https://img.shields.io/pypi/v/{{ cookiecutter.project*slug }}.svg)](https://pypi.org/project/{{ cookiecutter.project_slug }})
 {% endif -%}
 {% if cookiecutter.readthedocs == "Yes" -%}
-[![Documentation Status](https://readthedocs.org/projects/{{ cookiecutter.project_slug|replace('-', '*') }}/badge/)](https://{{ cookiecutter.project_slug|replace('-', '_') }}.readthedocs.io/)
+[![Documentation Status](https://readthedocs.org/projects/{{ cookiecutter.project_slug|replace('-', '\*') }}/badge/)](https://{{ cookiecutter.project_slug|replace('-', '*') }}.readthedocs.io/)
 {% endif -%}
