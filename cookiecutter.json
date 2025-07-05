@@ -8,5 +8,6 @@
   "pypi_release": ["Yes", "No"],
   "testpypi_release": ["Yes", "No"],
   "readthedocs": ["Yes", "No"],
-  "license": ["MIT", "BSD-2", "GPL-3.0"]
+  "license": ["MIT", "BSD-2", "GPL-3.0"],
+  "_extensions": ["local_extensions.YearExtension"]
 }
