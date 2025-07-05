@@ -58,16 +58,7 @@ _See `cookiecutter.json` for defaults and full list._ ([raw.githubusercontent.co
 └── .github/workflows/            # optional CI / release YMLs
 ```
 
-## 🔨 What the post‑gen script does
-
-hooks/post_gen_project.sh
-├─ python -m venv venv && pip install -r requirements.txt
-├─ pre‑commit install (pre‑push + default)
-├─ git init -b main && git add -A && git commit -m "Initial commit"
-└─ if github_url provided → git remote add origin … && git push -u origin main
-([raw.githubusercontent.com](https://raw.githubusercontent.com/linem-davton/python-cookiecutter-minimal/main/hooks/post_gen_project.sh))
-
-## 🧩 Internals
+## Internals
 
 - **`local_extensions.YearExtension`** injects `current_year` into Jinja templates so your LICENSE always has the right year. ([raw.githubusercontent.com](https://raw.githubusercontent.com/linem-davton/python-cookiecutter-minimal/main/local_extensions.py))
 - Templates live at the repository root; dynamic files like `README.md` and workflows are rendered with Jinja2 conditionals.
@@ -80,7 +71,7 @@ hooks/post_gen_project.sh
 3. Run `pre-commit install`.
 4. Open a pull request – CI will run linting and template self‑tests.
 
-## 📄 License
+## License
 
 This template itself is distributed under the MIT License. Generated projects will use whichever license you select at creation time.
 
