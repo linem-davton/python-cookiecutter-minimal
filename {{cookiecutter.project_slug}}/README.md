@@ -12,9 +12,14 @@
 {% if cookiecutter.license == "LGPL-3.0" -%}
 [![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 {% endif -%}
+
 {% if cookiecutter.pypi_release != "No" -%}
-[![PyPI Release](https://img.shields.io/pypi/v/{{ cookiecutter.project*slug }}.svg)](https://pypi.org/project/{{ cookiecutter.project_slug }})
+[![PyPI Release](https://img.shields.io/pypi/v/{{ cookiecutter.project_slug }}.svg)](https://pypi.org/project/{{ cookiecutter.project_slug }})
 {% endif -%}
+
+<!-- prettier-ignore -->
 {% if cookiecutter.readthedocs == "Yes" -%}
-[![Documentation Status](https://readthedocs.org/projects/{{ cookiecutter.project_slug|replace('-', '\*') }}/badge/)](https://{{ cookiecutter.project_slug|replace('-', '*') }}.readthedocs.io/)
+
+<!-- prettier-ignore -->
+[![Documentation Status](https://readthedocs.org/projects/{{ cookiecutter.project_slug|replace('-', '_') }}/badge/)](https://{{ cookiecutter.project_slug|replace('-', '_') }}.readthedocs.io/)
 {% endif -%}
