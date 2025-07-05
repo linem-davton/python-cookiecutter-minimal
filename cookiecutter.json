@@ -9,5 +9,6 @@
   "testpypi_release": ["Yes", "No"],
   "readthedocs": ["Yes", "No"],
   "license": ["MIT", "BSD-2", "GPL-3.0"],
-  "_extensions": ["local_extensions.YearExtension"]
+  "_extensions": ["local_extensions.YearExtension"],
+  "_copy_without_render": [".github/workflows/*"]
 }
