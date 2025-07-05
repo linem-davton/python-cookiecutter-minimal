@@ -3,4 +3,7 @@ hatchling
 twine
 pytest
 pre-commit
+sphinx>=7.3
+sphinx_rtd_theme
+myst-parser
 
