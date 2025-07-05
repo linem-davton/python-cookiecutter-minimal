@@ -18,4 +18,3 @@
 {% if cookiecutter.readthedocs == "Yes" -%}
 [![Documentation Status](https://readthedocs.org/projects/{{ cookiecutter.project_slug|replace('-', '*') }}/badge/)](https://{{ cookiecutter.project_slug|replace('-', '_') }}.readthedocs.io/)
 {% endif -%}
-{% endif -%}
