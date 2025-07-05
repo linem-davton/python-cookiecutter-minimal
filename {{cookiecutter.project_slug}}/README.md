@@ -25,3 +25,10 @@
 <!-- prettier-ignore -->
 [![Documentation Status](https://readthedocs.org/projects/{{ cookiecutter.project_slug|replace('-', '_') }}/badge/)](https://{{ cookiecutter.project_slug|replace('-', '_') }}.readthedocs.io/)
 {% endif -%}
+
+## Generate Docs
+
+```BASH
+sphinx-apidoc -o docs/source src --force
+sphinx-build -M html docs/source docs/build
+```

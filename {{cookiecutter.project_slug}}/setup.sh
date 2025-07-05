@@ -11,6 +11,7 @@ pre-commit install
 if [ -d docs/source ]; then
   ln -sf ../../README.md docs/source/README.md 2>/dev/null
   sphinx-apidoc -o docs/source src/ --force
+  sphinx-build -M html docs/source docs/build/html
 fi
 
 
