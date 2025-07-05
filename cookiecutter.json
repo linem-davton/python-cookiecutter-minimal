@@ -1,0 +1,10 @@
+{
+  "project_name": "My Python App",
+  "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '_') }}",
+  "author": "Your Name",
+  "email": "Your Email",
+  "github_actions_ci": ["Yes", "No"],
+  "pypi_release": ["Yes", "No"],
+  "testpypi_release": ["Yes", "No"],
+  "license": ["MIT", "BSD-2", "GPL-3.0"]
+}
