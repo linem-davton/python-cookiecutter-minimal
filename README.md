@@ -14,7 +14,7 @@
 - **Flexible licensing & tooling** – pick MIT, BSD‑3‑Clause, Apache‑2.0, GPL‑3.0 or none; enable/disable GitHub Actions CI, PyPI/TestPyPI release workflows, and Read the Docs.
 - **Pure Python + Shell** – no heavy dependencies; works the same on Linux, macOS, WSL, and CI.
 
-## 🚀 Quick start
+## Quick start
 
 ```bash
 # 1 · install Cookiecutter
@@ -60,19 +60,18 @@ _See `cookiecutter.json` for defaults and full list._ ([raw.githubusercontent.co
 
 ## 🔨 What the post‑gen script does
 
-````text
 hooks/post_gen_project.sh
 ├─ python -m venv venv && pip install -r requirements.txt
 ├─ pre‑commit install (pre‑push + default)
 ├─ git init -b main && git add -A && git commit -m "Initial commit"
 └─ if github_url provided → git remote add origin … && git push -u origin main
-``` ([raw.githubusercontent.com](https://raw.githubusercontent.com/linem-davton/python-cookiecutter-minimal/main/hooks/post_gen_project.sh))
+([raw.githubusercontent.com](https://raw.githubusercontent.com/linem-davton/python-cookiecutter-minimal/main/hooks/post_gen_project.sh))
 
 ## 🧩 Internals
 
-* **`local_extensions.YearExtension`** injects `current_year` into Jinja templates so your LICENSE always has the right year. ([raw.githubusercontent.com](https://raw.githubusercontent.com/linem-davton/python-cookiecutter-minimal/main/local_extensions.py))
-* Templates live at the repository root; dynamic files like `README.md` and workflows are rendered with Jinja2 conditionals.
-* Files under `.github/workflows` are copied without rendering to avoid CI YAML quoting issues (see `_copy_without_render`). ([raw.githubusercontent.com](https://raw.githubusercontent.com/linem-davton/python-cookiecutter-minimal/main/cookiecutter.json))
+- **`local_extensions.YearExtension`** injects `current_year` into Jinja templates so your LICENSE always has the right year. ([raw.githubusercontent.com](https://raw.githubusercontent.com/linem-davton/python-cookiecutter-minimal/main/local_extensions.py))
+- Templates live at the repository root; dynamic files like `README.md` and workflows are rendered with Jinja2 conditionals.
+- Files under `.github/workflows` are copied without rendering to avoid CI YAML quoting issues (see `_copy_without_render`). ([raw.githubusercontent.com](https://raw.githubusercontent.com/linem-davton/python-cookiecutter-minimal/main/cookiecutter.json))
 
 ## 🛠 Contributing
 
@@ -85,4 +84,6 @@ hooks/post_gen_project.sh
 
 This template itself is distributed under the MIT License. Generated projects will use whichever license you select at creation time.
 
-````
+```
+
+```
