@@ -13,7 +13,7 @@
 [![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 {% endif -%}
 {% if cookiecutter.pypi_release != "No" -%}
-[![PyPI Release](https://img.shields.io/pypi/v/{{ cookiecutter|modname }}.svg)](https://pypi.org/project/{{ cookiecutter|modname }})
+[![PyPI Release](https://img.shields.io/pypi/v/{{ cookiecutter.project_slug }}.svg)](https://pypi.org/project/{{ cookiecutter.project_slug }})
 {% endif -%}
 {% if cookiecutter.readthedocs == "Yes" -%}
 [![Documentation Status](https://readthedocs.org/projects/{{ cookiecutter|remote_slug }}/badge/)](https://{{ cookiecutter|remote_slug }}.readthedocs.io/)
