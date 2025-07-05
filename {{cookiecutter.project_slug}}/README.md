@@ -12,9 +12,6 @@
 {% if cookiecutter.license == "LGPL-3.0" -%}
 [![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 {% endif -%}
-{% if cookiecutter.github_actions_ci == "Yes" and cookiecutter|is_github -%}
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/{{ cookiecutter|username }}/{{ cookiecutter|remote_slug }}/ci.yml?branch=main)](https://github.com/{{ cookiecutter|username }}/{{ cookiecutter|remote_slug }}/actions/workflows/ci.yml)
-{% endif -%}
 {% if cookiecutter.pypi_release != "No" -%}
 [![PyPI Release](https://img.shields.io/pypi/v/{{ cookiecutter|modname }}.svg)](https://pypi.org/project/{{ cookiecutter|modname }})
 {% endif -%}
